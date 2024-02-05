@@ -6,9 +6,9 @@ function App() {
   const [formData, setFormData] = useState({ name: "", email: "" });
   const [recordData, setRecordData] = useState([]);
 
-  console.log("process.env:", process.env);
-  console.log("process.env.REACT_APP_NODE_ENV:", process.env.REACT_APP_NODE_ENV);
-  console.log("process.env.REACT_APP_SERVER_BASE_URL:", process.env.REACT_APP_SERVER_BASE_URL);
+  // console.log("process.env:", process.env);
+  // console.log("process.env.REACT_APP_NODE_ENV:", process.env.REACT_APP_NODE_ENV);
+  // console.log("process.env.REACT_APP_SERVER_BASE_URL:", process.env.REACT_APP_SERVER_BASE_URL);
   const base_url = process.env.REACT_APP_NODE_ENV === 'development' ? process.env.REACT_APP_LOCAL_BASE_URL : process.env.REACT_APP_SERVER_BASE_URL;
 
   useEffect(() => {
@@ -30,7 +30,7 @@ function App() {
       <nav className="navbar navbar-light bg-light mb-2">
         <a class="navbar-brand" href="https://www.youtube.com/@IntegrationNinjas">
           <img src="./logo_p.png" width="50" height="50" class="d-inline-block" alt="" />
-          Integration Ninja
+         Demo CICD
         </a>
       </nav>
       <div className='container'>
