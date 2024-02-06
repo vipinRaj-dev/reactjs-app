@@ -1,10 +1,8 @@
-FROM node:alpine3.18 as build
+FROM node:alpine3.18 as build  
 
-# Declare build time environment variables
 ARG REACT_APP_NODE_ENV
 ARG REACT_APP_SERVER_BASE_URL
 
-# Set default values for environment variables
 ENV REACT_APP_NODE_ENV=$REACT_APP_NODE_ENV
 ENV REACT_APP_SERVER_BASE_URL=$REACT_APP_SERVER_BASE_URL
 
@@ -12,7 +10,7 @@ ENV REACT_APP_SERVER_BASE_URL=$REACT_APP_SERVER_BASE_URL
 WORKDIR /app
 COPY package.json .
 RUN npm install
-COPY . .
+COPY . .    
 RUN npm run build
 
 # Serve with Nginx
