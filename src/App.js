@@ -39,11 +39,11 @@ function App() {
 
   return (
     <div className="App">
-      <nav className="navbar navbar-light bg-light mb-2">Vipin raj</nav>
+      <nav className="navbar navbar-light bg-light mb-2">cicd pipeline</nav>
       <div className="container">
         <div className="row">
           <div className="col">
-            <h3 className="text-center">Users List</h3>
+            <h3 className="text-center">Users List by vipin</h3>
             <ul>
               {recordData.map((r, i) => (
                 <tl key={i}>
