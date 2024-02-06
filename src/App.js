@@ -39,7 +39,7 @@ function App() {
 
   return (
     <div className="App">
-      <nav className="navbar navbar-light bg-light mb-2">Demo CICD</nav>
+      <nav className="navbar navbar-light bg-light mb-2">Vipin raj</nav>
       <div className="container">
         <div className="row">
           <div className="col">
